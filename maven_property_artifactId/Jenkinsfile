@@ -1,0 +1,15 @@
+node{
+
+stage('SCM Checkout') {
+
+git https://github.com/manideepsai444/remote-repository/new/master/maven_property_artifactId
+
+}
+
+stage('compile-package') {
+
+sh mvn package
+
+}
+
+}
